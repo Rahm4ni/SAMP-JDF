@@ -1,12 +1,13 @@
 /*
- *		           JDF INCLUDE v1.0 
- *		 (c) Copyright 2016 by SHinToD (Mrsh)
+ *		         JDF INCLUDE v1.1
+ *		 (c) Copyright 2012-2017 by Mrsh
  *
- * @author: 	SHinToD (SHinToD@OutLook.CoM) & Roozbeh Baabakaan
+ * @author: 	Mrsh & Roozbeh Baabakaan
  * @date: 		20th Dec 2012
- * @update: 	07th Oct 2016
+ * @update: 	23th Feb 2017
  * @method:		gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)		return gregorian to jalali converted date 
  * @method:		jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d)		return jalali to gregorian converted date 
+ * @method:		getjdate(year, month, day)									return jalali date
  *
  * It's released under the terms of GNU GENERAL PUBLIC LICENSE v3.
  *
@@ -115,3 +116,11 @@ stock jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d)
 	
 	return true;
 } 
+
+stock getjdate(&y, &m, &d) {
+	new yy, mm, dd;
+	getdate(yy, mm, dd);
+	gregorian_to_jalali(yy, mm, dd, y, m, d);
+	
+	return true;
+}
