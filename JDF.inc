@@ -1,8 +1,8 @@
 /*
- *		         JDF INCLUDE v1.1
- *		 (c) Copyright 2012-2017 by Mrsh
+ *		            JDF INCLUDE v1.1
+ *		 (c) Copyright 2012-2017 by Shyn Rhm
  *
- * @author: 		Mrsh & Roozbeh Baabakaan
+ * @author: 		Shayan Rahmani & Roozbeh Baabakaan
  * @date: 		20th Dec 2012
  * @update: 		23th Feb 2017
  * @method:		gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)		return gregorian to jalali converted date 
