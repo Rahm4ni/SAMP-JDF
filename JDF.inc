@@ -2,9 +2,9 @@
  *		         JDF INCLUDE v1.1
  *		 (c) Copyright 2012-2017 by Mrsh
  *
- * @author: 	Mrsh & Roozbeh Baabakaan
+ * @author: 		Mrsh & Roozbeh Baabakaan
  * @date: 		20th Dec 2012
- * @update: 	23th Feb 2017
+ * @update: 		23th Feb 2017
  * @method:		gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)		return gregorian to jalali converted date 
  * @method:		jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d)		return jalali to gregorian converted date 
  * @method:		getjdate(year, month, day)									return jalali date
@@ -13,16 +13,16 @@
  *
 */
  
-stock div(a, b) {
+div(a, b) {
 	 return (a / b);
 }
 
-stock gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)
+gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)
 {
 	new g_day_no, j_day_no, j_np, jy, jm, jd, gy, gm, gd, i;
 	
-	new g_days_in_month[13] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-	new j_days_in_month[13] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
+	new g_days_in_month[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	new j_days_in_month[12] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
 
 
 	gy = g_y - 1600;
@@ -61,7 +61,7 @@ stock gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)
 	return true;
 }
 
-stock jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d) 
+jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d) 
 { 
 	new jy, jm, jd, j_day_no, gy, g_day_no, leap, gm, gd, i;
 	
@@ -117,7 +117,7 @@ stock jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d)
 	return true;
 } 
 
-stock getjdate(&y, &m, &d) {
+getjdate(&y, &m, &d) {
 	new yy, mm, dd;
 	getdate(yy, mm, dd);
 	gregorian_to_jalali(yy, mm, dd, y, m, d);
