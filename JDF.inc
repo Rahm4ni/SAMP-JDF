@@ -7,7 +7,7 @@
  * @update: 		23th Feb 2017
  * @method:		gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)		return gregorian to jalali converted date 
  * @method:		jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d)		return jalali to gregorian converted date 
- * @method:		getjdate(year, month, day)									return jalali date
+ * @method:		getjdate(year, month, day)					return jalali date
  *
  * It's released under the terms of GNU GENERAL PUBLIC LICENSE v3.
  *
