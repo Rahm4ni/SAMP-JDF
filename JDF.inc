@@ -19,9 +19,10 @@ div(a, b) {
 
 gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)
 {
-	new g_day_no, j_day_no, j_np, jy, jm, jd, gy, gm, gd, i;
-	new g_days_in_month[12 char] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-	new j_days_in_month[12 char] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
+	new 
+		g_day_no, j_day_no, j_np, jy, jm, jd, gy, gm, gd, i,
+		g_days_in_month[12 char] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
+		j_days_in_month[12 char] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
 	gy = g_y - 1600;
 	gm = g_m - 1;
 	gd = g_d - 1;
@@ -50,9 +51,10 @@ gregorian_to_jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)
 
 jalali_to_gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d) 
 { 
-	new jy, jm, jd, j_day_no, gy, g_day_no, leap, gm, gd, i;
-	new g_days_in_month[12 char] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
-	new j_days_in_month[12 char] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29}; 
+	new 
+		jy, jm, jd, j_day_no, gy, g_day_no, leap, gm, gd, i,
+		g_days_in_month[12 char] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}, 
+		j_days_in_month[12 char] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29}; 
 	jy = j_y - 979;
 	jm = j_m - 1;
 	jd = j_d - 1;
