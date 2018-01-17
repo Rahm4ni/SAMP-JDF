@@ -14,8 +14,8 @@
  *
 */
 
-new const g_days_in_month[12 char] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-new const j_days_in_month[12 char] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
+new const g_days_in_month[12 char] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
+j_days_in_month[12 char] = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
 
 jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)
 {
