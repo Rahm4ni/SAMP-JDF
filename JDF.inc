@@ -7,8 +7,8 @@
  * @update: 		17th Jan 2018
  * @method:		jalali(g_y, g_m, g_d, &j_y, &j_m, &j_d)		Convert Gregorian date to Jalali date 
  * @method:		gregorian(j_y, j_m, j_d, &g_y, &g_m, &g_d)	Convert Jalali date to Gregorian date 
- * @method:		getjdate(year, month, day)					Current Jalali date
- * @method:		jtimestamp()								Current Jalali date time stamp
+ * @method:		getjdate(year, month, day)			Current Jalali date
+ * @method:		jtimestamp()					Current Jalali date time stamp
  *
  * It's released under the terms of GNU GENERAL PUBLIC LICENSE v3.
  *
