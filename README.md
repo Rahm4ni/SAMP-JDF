@@ -12,7 +12,7 @@ an include that can help you to convert gregorian to jalali or jalali to gregori
     printf("%d/%d/%d", gy, gm, gd); //Will return: 2016/10/7
     __________________________________________________________
     new y, m, d;
-    getjdate(y, m, d);
+    jdate(y, m, d);
     printf("%d/%d/%d", y, m, d); //Will return current Jalali date
     __________________________________________________________
     print(jtimestamp()); //Will return current Jalali time stamp
