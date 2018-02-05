@@ -218,22 +218,6 @@ stock ReturnJDate(timestamp)
 	#if defined AfghanistanMonths
 	switch (month)
 	{
-	    case 1: monthname = "Farvardin";
-	    case 2: monthname = "Ordibehesht";
-	    case 3: monthname = "Khordad";
-	    case 4: monthname = "Tir";
-	    case 5: monthname = "Mordad";
-	    case 6: monthname = "Shahrivar";
-	    case 7: monthname = "Mehr";
-	    case 8: monthname = "Aban";
-	    case 9: monthname = "Azar";
-	    case 10: monthname = "Dey";
-	    case 11: monthname = "Bahman";
-	    case 12: monthname = "Esfand";
-	}
-	#else
-	switch (month)
-	{
 	    case 1: monthname = "Hamal";
 	    case 2: monthname = "Sawr";
 	    case 3: monthname = "Jawza";
@@ -246,6 +230,22 @@ stock ReturnJDate(timestamp)
 	    case 10: monthname = "Jady";
 	    case 11: monthname = "Dalv";
 	    case 12: monthname = "Hut";
+	}
+	#else
+	switch (month)
+	{
+	    case 1: monthname = "Farvardin";
+	    case 2: monthname = "Ordibehesht";
+	    case 3: monthname = "Khordad";
+	    case 4: monthname = "Tir";
+	    case 5: monthname = "Mordad";
+	    case 6: monthname = "Shahrivar";
+	    case 7: monthname = "Mehr";
+	    case 8: monthname = "Aban";
+	    case 9: monthname = "Azar";
+	    case 10: monthname = "Dey";
+	    case 11: monthname = "Bahman";
+	    case 12: monthname = "Esfand";
 	}
 	#endif
 	new date[30];
