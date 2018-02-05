@@ -9,4 +9,5 @@ an include that can help you to convert gregorian to jalali or jalali to gregori
      * JDatestamp()
      * TimestampToJDate(Timestamp, &year, &month, &day, &hour, &minute, &second, HourGMT = 3, MinuteGMT = 30)
      * JDateToTimestamp(year, month, day)
+     * ReturnJDate(timestamp)
 ```
