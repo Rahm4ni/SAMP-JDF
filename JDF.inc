@@ -14,6 +14,7 @@
  * @method:		JDatestamp() »» Current Jalali datestamp
  * @method:		TimestampToJDate(Timestamp, &year, &month, &day, &hour, &minute, &second, HourGMT = 3, MinuteGMT = 30) »» Convert Gregorian timestamp to Jalali date
  * @method:		JDateToTimestamp(year, month, day) »» Convert Jalali date to Gregorian timestamp
+ * @method:		ReturnJDate(timestamp) »» Return Jalali date from timestamp
  *
  * @preprocessor: define AfghanistanMonths »» Use this when you wanna use Afghanistan months names
 */
