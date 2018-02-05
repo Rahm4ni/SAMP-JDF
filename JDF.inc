@@ -4,7 +4,7 @@
  *
  * @author: 		Shayan Rahmani & Roozbeh Baabakaan
  * @date: 		20th Dec 2012
- * @update: 		17th Jan 2018
+ * @update: 		05th Feb 2018
  *
  * It's released under the terms of GNU GENERAL PUBLIC LICENSE v3.
  *
