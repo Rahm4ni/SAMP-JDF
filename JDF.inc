@@ -2,7 +2,7 @@
  *		            JDF INCLUDE v1.3
  *		 (c) Copyright 2012-2017 by Shyn Rhm
  *
- * @author: 		Shayan Rahmani & Roozbeh Baabakaan
+ * @author: 		Mohammad Rahmani & Roozbeh Baabakaan
  * @date: 		20th Dec 2012
  * @update: 		05th Feb 2018
  *
